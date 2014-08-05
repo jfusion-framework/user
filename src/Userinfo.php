@@ -25,6 +25,7 @@ use stdClass;
  * @property array              $groupnames         groupnames
  * @property int                $registerDate       timestamp of register date
  * @property int                $lastvisitDate      timestamp of lastvisit date
+ * @property string|null        $language         language code
  */
 class Userinfo {
 	private $jname = null;
@@ -56,6 +57,7 @@ class Userinfo {
 		$this->userinfo->groupnames = array();
 		$this->userinfo->registerDate = 0;
 		$this->userinfo->lastvisitDate = 0;
+		$this->userinfo->language = null;
 
 		$this->jname = $jname;
 	}
